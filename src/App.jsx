@@ -29,12 +29,11 @@ const App = () => {
   
   const [time, setTime] = useState('')  
   const [date, setDate] = useState('')  
-  
+   
   let api_key = import.meta.env.VITE_REACT_APP_API_KEY
   
   const handleSearch = async (e) => {
     e.preventDefault()
-    
     if (inputSearch === ''){
       setErrors('Input cannot be empty')
       return 
